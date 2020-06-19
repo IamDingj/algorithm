@@ -10,7 +10,7 @@ package com.dj.pattern.singleton;
  */
 public class StaticInnerSingleton {
 
-	// 静态内部类保证了单例在多线程并发下的线程安全性
+	// 静态内部类保证了单例在多线程并发下的线程安全性（推荐方式）
 	private static class MySingletonFactory {
 		 // 使用final修饰，可以避免变量被重新赋值，JVM也不用去跟踪该引用是否被更改
 		 private static final StaticInnerSingleton INSTANCE = new StaticInnerSingleton();

@@ -20,9 +20,7 @@ public class LazyDoubleCheckSingleton {
 
 	public static LazyDoubleCheckSingleton getInstance() {
 		// 第一次检查，用来避免 uniqueInstance 已经被实例化之后的加锁操作
-		if (uniqueInstance != null) {
-			// 不创建
-		} else {
+		if (uniqueInstance == null) {
 			// 创建实例之前（等待100毫秒）可能会有一些准备性的耗时工作
 			try {
 				Thread.sleep(100L);
