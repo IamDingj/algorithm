@@ -3,7 +3,7 @@ package com.dj.pattern.factoryMethod;
 import com.dj.pattern.simpleFactory.ConcreteProductA;
 import com.dj.pattern.simpleFactory.Product;
 
-public class ConcreteFactoryA implements FactoryMethod {
+public class ConcreteFactoryA implements Factory {
 
 	@Override
 	public Product createProduct() {

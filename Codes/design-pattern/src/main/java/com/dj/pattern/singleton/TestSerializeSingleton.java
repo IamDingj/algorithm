@@ -29,11 +29,7 @@ public class TestSerializeSingleton {
 			ois = new ObjectInputStream(fis);
 			SerializeSingleton rSingleton = (SerializeSingleton) ois.readObject();
 			System.out.println("反序列化 hashCode: "+rSingleton.hashCode());
-		} catch (FileNotFoundException e) { 
-			e.printStackTrace();
-		} catch (IOException e) { 
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {
 			try {

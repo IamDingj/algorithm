@@ -10,7 +10,7 @@ import com.dj.pattern.simpleFactory.Product;
  * @date 2018年7月13日
  *
  */
-public interface FactoryMethod {
+public interface Factory {
 	
 	Product createProduct();
 }

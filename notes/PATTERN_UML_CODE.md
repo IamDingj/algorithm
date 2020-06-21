@@ -83,7 +83,7 @@ interface Product {
     + show() : void
 }
 
-interface FactoryMethod {
+interface Factory {
     + createProduct() : Product
 }
 
@@ -95,7 +95,7 @@ Product <|.. ConcreteProduct
 class ConcreteFactory {
    + createProduct() : Product
 }
-FactoryMethod <|.. ConcreteFactory
+Factory <|.. ConcreteFactory
 
 ConcreteProduct <-- ConcreteFactory
 
