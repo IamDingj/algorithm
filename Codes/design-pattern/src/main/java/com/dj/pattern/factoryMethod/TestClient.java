@@ -2,7 +2,7 @@ package com.dj.pattern.factoryMethod;
 
 import com.dj.pattern.simpleFactory.Product;
 
-import java.net.URLConnection;
+import java.util.Collection;
 
 public class TestClient {
 
@@ -21,7 +21,7 @@ public class TestClient {
 			e.printStackTrace();
 		}
 
-		URLConnection
-		
-	}
+//       java.util.Collection
+
+    }
 }
