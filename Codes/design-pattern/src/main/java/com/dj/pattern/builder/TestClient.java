@@ -7,5 +7,7 @@ public class TestClient {
 		Director director = new Director(builder);
 		Product product = director.buildProduct();
 		product.show();
+
+//		StringBuilder
 	}
 }
